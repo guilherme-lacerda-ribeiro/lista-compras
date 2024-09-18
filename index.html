@@ -16,40 +16,38 @@
             <img src="./img/bag.png" alt="Imagem da sacola de compras" class="formulario__imagem">
             <form class="formulario__item">
                 <input type="text" name="formulario__texto" id="formulario__texto" class="formulario__texto" placeholder="Digite o item que deseja adicionar">
-                <button class="formulario__salvar">Salvar item</button>
+                <button class="formulario__salvar" id="formulario__salvar">Salvar item</button>
             </form>
         </section>
 
         <section class="lista-compras">
             <h2 class="lista__titulo">Lista de Compras</h2>
             <hr>
-            <ul class="lista__itens">
-                <li>
+            <ul class="lista__itens" id="lista-de-compras">
+                <!-- <li>
                     <div class="lista__item">
-                        <input type="checkbox" class="lista__checkbox">
+                        <input type="checkbox" class="lista__checkbox" id="checkbox-1">
+                        <label for="checkbox-1" class="lista__checkbox__rotulo">
+                            <div class="lista__checkbox__decorado"></div>
+                        </label>
                         <p>Queijo minas</p>
                         <button><img src="img/excluir.svg" alt="Excluir item" class="lista__botao lista__botao--menor"></button>
                         <button><img src="img/editar.svg" alt="Editar item" class="lista__botao"></button>
                     </div>
-                    <p class="lista__data">Segunda-feira (31/10/2022) às 08:30</p>
-                </li>
-                <li>
-                    <div class="lista__item">
-                        <input type="checkbox" class="lista__checkbox">
-                        <p>Queijo minas</p>
-                        <button><img src="img/excluir.svg" alt="Excluir item" class="lista__botao lista__botao--menor"></button>
-                        <button><img src="img/editar.svg" alt="Editar item" class="lista__botao"></button>
-                    </div>
-                    <p class="lista__data">Segunda-feira (31/10/2022) às 08:30</p>
-                </li>
+                    <p class="lista__data" id="lista__data">Segunda-feira (31/10/2022) às 08:30</p>
+                </li> -->
             </ul>
         </section>
 
         <section class="lista-comprados">
             <h2 class="lista__titulo">Comprado</h2>
             <hr>
+            <ul class="lista__itens" id="lista-dos-comprados">
+            </ul>
         </section>
     </main>
+
+    <script src="script/scripts.js"></script>
 </body>
 
 </html>

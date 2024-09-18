@@ -21,8 +21,30 @@ hr {
 }
 
 .lista__checkbox {
-    width: 1.5rem;
-    height: 1.5rem;
+    display: none;
+}
+
+.lista__checkbox__decorado {
+    display: inline-block;
+    width: 24px;
+    height: 24px;
+    border-radius: 4px;
+    border: solid 1px var(--cor-marinho);
+}
+
+.lista__checkbox:checked~.lista__checkbox__rotulo>.lista__checkbox__decorado {
+    background-color: var(--cor-marinho);
+}
+
+.lista__checkbox:checked~.lista__checkbox__rotulo>.lista__checkbox__decorado::after {
+    content: '';
+    border-bottom: solid 1px var(--cor-branco);
+    border-right: solid 1px var(--cor-branco);
+    display: inline-block;
+    transform: rotate(45deg);
+    margin: 0 0 0 6px;
+    width: 8px;
+    height: 16px;
 }
 
 .lista__item p {
@@ -32,6 +54,7 @@ hr {
 .lista__item button {
     background-color: transparent;
     border: none;
+    text-shadow: 1px 1px var(--cor-ocre);
 }
 
 .lista__botao {
