@@ -1,0 +1,35 @@
+.formulario {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+}
+
+.formulario__item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    margin: 1rem 0;
+}
+
+.formulario__texto {
+    width: 90%;
+    text-align: center;
+    padding: 0.5rem;
+    border-radius: 1.5rem;
+    border: solid 1px var(--cor-marinho);
+}
+
+.formulario__texto::placeholder {
+    text-align: center;
+}
+
+.formulario__salvar {
+    background-color: var(--cor-coral);
+    color: var(--cor-branco);
+    padding: 1rem;
+    margin: 0.5rem;
+    border: none;
+    border-radius: 1.5rem;
+}
