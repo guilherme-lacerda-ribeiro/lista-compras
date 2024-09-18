@@ -1,0 +1,71 @@
+.lista__titulo {
+    font-family: var(--fonte-titulo);
+    color: var(--cor-coral);
+    font-size: 1.25rem;
+}
+
+hr {
+    border: none;
+    border-bottom: dotted 2px var(--cor-coral);
+    margin: 1rem 0 2rem;
+}
+
+.lista__itens {
+    color: var(--cor-marinho);
+}
+
+.lista__item {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.lista__checkbox {
+    display: none;
+}
+
+.lista__checkbox__decorado {
+    display: inline-block;
+    width: 24px;
+    height: 24px;
+    border-radius: 4px;
+    border: solid 1px var(--cor-marinho);
+}
+
+.lista__checkbox:checked~.lista__checkbox__rotulo>.lista__checkbox__decorado {
+    background-color: var(--cor-marinho);
+}
+
+.lista__checkbox:checked~.lista__checkbox__rotulo>.lista__checkbox__decorado::after {
+    content: '';
+    border-bottom: solid 1px var(--cor-branco);
+    border-right: solid 1px var(--cor-branco);
+    display: inline-block;
+    transform: rotate(45deg);
+    margin: 0 0 0 6px;
+    width: 8px;
+    height: 16px;
+}
+
+.lista__item p {
+    margin-right: auto;
+}
+
+.lista__item button {
+    background-color: transparent;
+    border: none;
+    text-shadow: 1px 1px var(--cor-ocre);
+}
+
+.lista__botao {
+    width: 1rem;
+}
+
+.lista__botao--menor {
+    width: 0.8rem;
+}
+
+.lista__data {
+    margin: 0.8rem 0 1rem;
+    font-size: 0.875rem;
+}
