@@ -69,3 +69,12 @@ hr {
     margin: 0.8rem 0 1rem;
     font-size: 0.875rem;
 }
+
+.lista__itens--vazia {
+    font-size: 1.125rem;
+    line-height: 1.5rem;
+}
+
+.lista-comprados {
+    display: none;
+}
