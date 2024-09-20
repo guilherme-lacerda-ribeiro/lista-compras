@@ -1,4 +1,4 @@
-# Lista de Compras
+# [Lista de Compras](https://guilherme-lacerda-ribeiro.github.io/lista-compras/)
 Estudo de caso de sistema de lista de compras.
 
 A proposta é reciclar o aprendizado em:
