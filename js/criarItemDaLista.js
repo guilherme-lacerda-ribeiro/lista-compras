@@ -32,6 +32,7 @@ export function criarItemDaLista(nomeDoItem) {
             pNomeItem.style.textDecoration = "none";
             listaComprar.appendChild(liElement);
         }
+        verificarListaComprados()
     });
 
     const labelCheckbox = document.createElement("label");
@@ -40,9 +41,6 @@ export function criarItemDaLista(nomeDoItem) {
     const divCheckboxDecorado = document.createElement("div");
     divCheckboxDecorado.classList.add("lista__checkbox__decorado");
     labelCheckbox.setAttribute("for", inputCheckbox.id);
-    labelCheckbox.addEventListener("click", function() {
-        verificarListaComprados()
-    })
     labelCheckbox.appendChild(divCheckboxDecorado);
 
     const pNomeItem = document.createElement("p");
