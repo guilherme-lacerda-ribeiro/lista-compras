@@ -1,16 +1,17 @@
-@import url('https://fonts.googleapis.com/css2?family=Krona+One&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Numans&display=swap');
-@import url('formulario.css');
-@import url('listas.css');
+@import url("https://fonts.googleapis.com/css2?family=Krona+One&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Numans&display=swap");
+@import url("formulario.css");
+@import url("listas.css");
 
 :root {
-    --cor-branco: #FBFBFB;
-    --cor-cinza-claro: #F9F9F9;
-    --cor-texto-placeholder: #8A8A8A;
-    --cor-coral: #F55B64;
-    --cor-ocre: #C2373F;
+    --cor-branco: #fbfbfb;
+    --cor-cinza-claro: #f9f9f9;
+    --cor-texto-placeholder: #8a8a8a;
+    --cor-coral: #f55b64;
+    --cor-ocre: #c2373f;
     --cor-marinho: #131730;
-    --cor-marinho-degrade: linear-gradient(180deg, #010103 0%, #24307A 100%);
+    --cor-marinho-degrade: linear-gradient(180deg, #010103 0%, #24307a 100%);
+    --cor-rodape: #dbe4ef;
     --fonte-titulo: "Krona One", sans-serif;
     --fonte-texto: "Numans", sans-serif;
     --fonte-placeholder: "Montserrat", sans-serif;
@@ -26,18 +27,35 @@ body {
     background-repeat: no-repeat;
     height: 100vh;
     display: flex;
+    flex-direction: column;
     justify-content: center;
     font-family: var(--fonte-texto);
 }
 
 main {
     background-color: var(--cor-branco);
-    width: 100%;
-    margin: 2em 1em;
+    height: 85vh;
+    max-width: 440px;
+    margin: 2em 1rem;
     padding: 3.375rem 1rem;
     border-radius: 1rem;
 
     display: flex;
     flex-direction: column;
+    align-items: center;
     gap: 1.5rem;
+    overflow: auto;
+}
+
+.rodape {
+    padding: 0 1rem;
+    font-size: 0.75rem;
+    text-align: center;
+    color: var(--cor-rodape);
+}
+
+@media screen and (min-width: 480px) {
+    main {
+        margin: 2rem auto;
+    }
 }
